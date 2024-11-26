@@ -1,14 +1,16 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import LandingPage from '../pages/LandingPage';
+import LandingPages from '../pages/LandingPages';
 import NotFound from '../pages/NotFound';
 import Auth from '../pages/Auth';
 import Dashboard from '../pages/Dashboard';
 import RouterErrorBoundary from './RouterErrorBoundary';
+import Kelasku from '../pages/Kelasku';
+import { Modul } from '../pages/Modul';
 
 const routes = [
   {
     index: true,
-    element: <LandingPage />,
+    element: <LandingPages />,
   },
   {
     path: '/auth',
@@ -17,6 +19,14 @@ const routes = [
   {
     path: '/dashboard',
     element: <Dashboard />,
+  },
+  {
+    path: '/kelasku',
+    element: <Kelasku />,
+  },
+  {
+    path: '/modul',
+    element: <Modul />,
   },
   {
     path: '*',

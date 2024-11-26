@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import BellFilled from './icon/BellFilled';
+import userImg from '../assets/images/ibnu.png';
 
-const TopBar = ({ userImg }) => {
+const TopBar = () => {
   return (
     <div className="bg-white p-5 rounded-xl flex fixed top-5 right-5 left-[270px] items-center">
       <div className="space-x-28 grow pl-20">
         <NavLink
           to={'/dashboard'}
           className={({ isActive }) =>
-            `font-bold hover:text-primary ${
+            `font-bold hover:tex  t-primary ${
               isActive ? 'text-primary' : 'text-[#9696BB]'
             }`
           }

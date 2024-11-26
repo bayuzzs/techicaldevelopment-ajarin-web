@@ -3,7 +3,12 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: { primary: '#2563EB', secondary: '#F59E0B', dark: '#0F172A' },
+      colors: {
+        'primary': '#2563EB',
+        'secondary': '#F59E0B',
+        'dark': '#0F172A',
+        'card-border': '#acdaff',
+      },
       keyframes: {
         'fade-in': {
           '0%': {
@@ -11,6 +16,12 @@ export default {
           },
           '100%': {
             opacity: '1,',
+          },
+        },
+        'move-right': {
+          '100%': {
+            'margin-left': '10%',
+            'opacity': 0,
           },
         },
       },
