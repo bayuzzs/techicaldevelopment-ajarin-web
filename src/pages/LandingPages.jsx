@@ -83,7 +83,7 @@ const LandingPage = () => {
               </p>
               <div className="h-10 w-[230px] overflow-hidden rounded-[20px] border-[1px] border-solid border-primary after:ml-[5%] after:animate-move-right after:content-[url('/images/icon/arrow-big.svg')] md:h-10 md:max-w-[380px] md:rounded-[30px] xl:h-[50px] xl:min-w-[380px]">
                 <Link
-                  to="/signin"
+                  to="/auth"
                   className="inline-block h-full w-3/4 rounded-[20px] bg-primary text-center text-xs leading-10 text-white transition-[width] duration-500 hover:w-full hover:opacity-80 md:rounded-[30px] md:text-[0.8rem] md:leading-10 xl:text-[1rem] xl:leading-[50px]"
                 >
                   Mulai Belajar!

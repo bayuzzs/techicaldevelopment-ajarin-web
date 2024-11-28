@@ -77,6 +77,12 @@ const Auth = () => {
             </p>
             <form action="#" method="" className="py-5">
               <Input
+                inputTitle="Nama"
+                inputName="nama"
+                inputType="text"
+                iconUrl={userSmall}
+              />
+              <Input
                 inputTitle="Email"
                 inputName="email"
                 inputType="email"
@@ -131,12 +137,6 @@ const Auth = () => {
               </span>
             </p>
             <form className="my-5" action="utils/signin.php" method="POST">
-              <Input
-                inputTitle="Nama"
-                inputName="nama"
-                inputType="text"
-                iconUrl={userSmall}
-              />
               <Input
                 inputTitle="Email"
                 inputName="email"
